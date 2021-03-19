@@ -164,7 +164,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i - 1,
-                                NextWidth = j - 1
+                                NextWidth = j - 1,
+                                Piece = 1
                             });
                         }
                         if (CheckMove.checkMoveUpRight(board, i, j))
@@ -174,7 +175,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i - 1,
-                                NextWidth = j + 1
+                                NextWidth = j + 1,
+                                Piece = 1
                             });
                         }
 
@@ -182,6 +184,7 @@ namespace DraughtsGameAPIService.Helpers
                         {
                             CurrentHeight = i,
                             CurrentWidth = j,
+                            Piece = 1
                         }));
                         if (resultTree.Left != null || resultTree.Right != null)
                         {
@@ -198,7 +201,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i + 1,
-                                NextWidth = j - 1
+                                NextWidth = j - 1,
+                                Piece = 2
                             });
                         }
                         if (CheckMove.checkMoveDownRight(board, i, j))
@@ -208,7 +212,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i + 1,
-                                NextWidth = j + 1
+                                NextWidth = j + 1,
+                                Piece = 2
                             });
                         }
 
@@ -216,6 +221,8 @@ namespace DraughtsGameAPIService.Helpers
                         {
                             CurrentHeight = i,
                             CurrentWidth = j,
+                            Piece = 2
+
                         }));
                         if (resultTree.Left != null || resultTree.Right != null)
                         {
@@ -232,7 +239,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i - 1,
-                                NextWidth = j - 1
+                                NextWidth = j - 1,
+                                Piece = piece == 3 ? 1 : 2
                             });
                         }
                         if (CheckMove.checkMoveUpRight(board, i, j))
@@ -242,7 +250,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i - 1,
-                                NextWidth = j + 1
+                                NextWidth = j + 1,
+                                Piece = piece == 3 ? 1 : 2
                             });
                         }
                         if (CheckMove.checkMoveDownLeft(board, i, j))
@@ -252,7 +261,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i + 1,
-                                NextWidth = j - 1
+                                NextWidth = j - 1,
+                                Piece = piece == 3 ? 1 : 2
                             });
                         }
                         if (CheckMove.checkMoveDownRight(board, i, j))
@@ -262,7 +272,8 @@ namespace DraughtsGameAPIService.Helpers
                                 CurrentHeight = i,
                                 CurrentWidth = j,
                                 NextHeight = i + 1,
-                                NextWidth = j + 1
+                                NextWidth = j + 1,
+                                Piece = piece == 3 ? 1 : 2
                             });
                         }
 
@@ -271,6 +282,7 @@ namespace DraughtsGameAPIService.Helpers
                         {
                             CurrentHeight = i,
                             CurrentWidth = j,
+                            Piece = piece == 3 ? 1 : 2
                         }));
                         if (resultTree.DownLeft != null || resultTree.DownRight != null || resultTree.UpLeft != null || resultTree.UpRight != null)
                         {
@@ -316,7 +328,8 @@ namespace DraughtsGameAPIService.Helpers
                     CurrentWidth = takeMoves[0].CurrentWidth,
                     NextHeight = take.NextHeight,
                     NextWidth = take.NextWidth,
-                    Takes = takes
+                    Takes = takes,
+                    Piece = takeMoves[0].Piece
                 });
             }
 

@@ -17,5 +17,7 @@ namespace DraughtsGameAPIService.Helpers
         public int NextHeight { get; set; }
 
         public int NextWidth { get; set; }
+
+        public int Piece { get; set; }
     }
 }

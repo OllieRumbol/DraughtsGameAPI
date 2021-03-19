@@ -18,5 +18,7 @@ namespace DraughtsGameAPIModels.Service
         public int NextWidth { get; set; }
 
         public List<Take> Takes { get; set; }
+
+        public List<NextMove> moves { get; set; }
     }
 }
