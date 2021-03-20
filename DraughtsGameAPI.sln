@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraughtsGameAPI", "DraughtsGameAPI\DraughtsGameAPI.csproj", "{66A23785-9117-4BBC-AEAE-E2C4FB87D875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DraughtsGameAPI", "DraughtsGameAPI\DraughtsGameAPI.csproj", "{66A23785-9117-4BBC-AEAE-E2C4FB87D875}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DraughtsGameAPIService", "DraughtsGameAPIService\DraughtsGameAPIService.csproj", "{C8334121-7CA1-4E28-80FA-8B80CBAB2B0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DraughtsGameAPIModels", "DraughtsGameAPIModels\DraughtsGameAPIModels.csproj", "{FD9A7FEF-62B7-4A12-AC9C-E94F7A763F7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraughtsGameAPIUnitTests", "DraughtsGameAPIUnitTests\DraughtsGameAPIUnitTests.csproj", "{8094DC2F-F7F5-4544-BEAB-957512F73C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{66A23785-9117-4BBC-AEAE-E2C4FB87D875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A23785-9117-4BBC-AEAE-E2C4FB87D875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A23785-9117-4BBC-AEAE-E2C4FB87D875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8334121-7CA1-4E28-80FA-8B80CBAB2B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8334121-7CA1-4E28-80FA-8B80CBAB2B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8334121-7CA1-4E28-80FA-8B80CBAB2B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8334121-7CA1-4E28-80FA-8B80CBAB2B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9A7FEF-62B7-4A12-AC9C-E94F7A763F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9A7FEF-62B7-4A12-AC9C-E94F7A763F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9A7FEF-62B7-4A12-AC9C-E94F7A763F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9A7FEF-62B7-4A12-AC9C-E94F7A763F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8094DC2F-F7F5-4544-BEAB-957512F73C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8094DC2F-F7F5-4544-BEAB-957512F73C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8094DC2F-F7F5-4544-BEAB-957512F73C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8094DC2F-F7F5-4544-BEAB-957512F73C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
